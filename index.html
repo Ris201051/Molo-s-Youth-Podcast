@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milo's Youth Podcast</title>
+  <style>
+    :root {
+      --primary: #00BFCF;
+      --highlight: #FF8A00;
+      --dark: #1F2A44;
+      --light-bg: #f8f8f8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: var(--light-bg);
+      color: var(--dark);
+    }
+    header {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: var(--highlight);
+    }
+    .section {
+      padding: 2rem;
+    }
+    .intro {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    .intro h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .featured-podcast, .blog-post, .contact-info {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 0.7rem 1.2rem;
+      background-color: var(--highlight);
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      nav a {
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+    @media (max-width: 500px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="milos-logo.jpg" alt="Milo's Youth Podcast Logo" />
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#listen">Listen</a>
+      <a href="#blog">Blog</a>
+      <a href="#involved">Get Involved</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="intro" id="home">
+    <h1>Empowering the Next Generation, One Voice at a Time</h1>
+    <p>Real youth. Real talk. Real impact. Welcome to Milo’s Youth Podcast!</p>
+    <a class="cta-button" href="#listen">🎧 Watch/Listen</a>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Milo’s Youth Podcast</h2>
+    <p>Milo’s Youth Podcast gives young people a powerful space to speak, be heard, and spark change. We talk about real-life challenges — from relationships to leadership, mental health, creativity, faith and identity.</p>
+    <p><strong>Mission:</strong> Empower bold voices. Shape strong minds. Build youth-driven communities.</p>
+  </section>
+
+  <section class="section" id="listen">
+    <h2>Watch & Listen</h2>
+    <div class="featured-podcast">
+      <h3>🎙 Breaking the Silence: Youth & Mental Health</h3>
+      <p><strong>Guest:</strong> Sarah Conteh</p>
+      <a class="cta-button" href="https://youtube.com/@milosyouthpodcast?si=XjYjnI07eGppxPx_" target="_blank">▶️ Watch on YouTube</a>
+    </div>
+    <p>Also available on:
+      <a href="https://www.tiktok.com/@milos.youth.podca?_t=ZM-8vvAviKBQsJ&_r=1" target="_blank">TikTok</a> •
+      <a href="https://www.instagram.com/milo_youth_podcast?igsh=MXQxZWZrOTRsOXU2Yw%3D%3D&utm_source=qr" target="_blank">Instagram</a> •
+      <a href="https://www.facebook.com/share/18wmp1VgNg/?mibextid=wwXIfr" target="_blank">Facebook</a> •
+      <a href="https://x.com/milo_podcast?s=21" target="_blank">X (Twitter)</a> •
+      <a href="https://www.threads.net/@milo_youth_podcast" target="_blank">Threads</a>
+    </p>
+  </section>
+
+  <section class="section" id="blog">
+    <h2>Youth Voices Blog</h2>
+    <div class="blog-post">
+      <h3>“What It Means to Be Heard” – By Mariama Jalloh</h3>
+      <p>A personal story about overcoming fear and speaking truth as a young woman in Freetown.</p>
+    </div>
+    <div class="blog-post">
+      <h3>“Growing Up in Freetown” – By Ismail Kamara</h3>
+      <p>A nostalgic reflection of challenges, friendships, and hope in urban youth life.</p>
+    </div>
+  </section>
+
+  <section class="section" id="involved">
+    <h2>Get Involved</h2>
+    <ul>
+      <li>🎤 Be a Guest on the Podcast</li>
+      <li>🎬 Volunteer in Media or Editing</li>
+      <li>💖 Sponsor a Youth Voice</li>
+      <li>🛠 Join Our Production Crew</li>
+    </ul>
+    <a class="cta-button" href="#">Join Us</a>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p>Email: info@milosyouthpodcast.com</p>
+      <p>WhatsApp: +232 72195284</p>
+      <p>Based in Freetown, Sierra Leone</p>
+      <p>Follow us: 
+        <a href="https://youtube.com/@milosyouthpodcast?si=XjYjnI07eGppxPx_" target="_blank">YouTube</a> • 
+        <a href="https://www.tiktok.com/@milos.youth.podca?_t=ZM-8vvAviKBQsJ&_r=1" target="_blank">TikTok</a> • 
+        <a href="https://www.instagram.com/milo_youth_podcast?igsh=MXQxZWZrOTRsOXU2Yw%3D%3D&utm_source=qr" target="_blank">Instagram</a> • 
+        <a href="https://www.facebook.com/share/18wmp1VgNg/?mibextid=wwXIfr" target="_blank">Facebook</a> • 
+        <a href="https://x.com/milo_podcast?s=21" target="_blank">X</a> • 
+        <a href="https://www.threads.net/@milo_youth_podcast" target="_blank">Threads</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Milo's Youth Podcast. All rights reserved.</p>
+  </footer>
+</body>
+</html>
